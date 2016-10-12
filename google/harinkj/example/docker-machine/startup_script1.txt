@@ -1,0 +1,1 @@
+sudo groupadd docker; sudo usermod -aG $USER; sudo service docker start; sudo useradd -m -d /home/tests -p `openssl passwd -crypt test1234` tests;sudo echo \"AllowUsers tests\" >> /etc/ssh/sshd_config

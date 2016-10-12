@@ -1,0 +1,13 @@
+{
+  "builders": [{
+	  "type": "googlecompute",
+	  "account_file": "Harin's First Project-335635df82f2.json",
+	  "project_id": "quick-replica-95101",
+	  "source_image": "ubuntu-1404-trusty-v20160919",
+	  "zone": "us-east1-b",
+	  "image_name":"a-ubuntu-trusty-docker",
+	  "network":"main-network",
+	  "subnetwork":"default-us-east1",
+	  "tags":["docker","docker-machine"]
+  }]
+}

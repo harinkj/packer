@@ -1,0 +1,10 @@
+# Can ignore specific files
+aws.json
+computeserviceaccount.json
+Harin's First Project-335635df82f2.json
+# Use wildcards as well
+*~
+*.swp
+
+# Can also ignore all directories and files in a directory.
+#tmp/**/* 

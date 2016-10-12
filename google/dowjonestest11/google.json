@@ -1,0 +1,20 @@
+{
+  "builders": [{
+	  "type": "googlecompute",
+	  "account_file": "computeserviceaccount.json",
+	  "project_id": "infra-agent-144815",
+	  "source_image": "ubuntu-1404-trusty-v20160919",
+	  "zone": "us-east1-b",
+	  "image_name":"a-docker-ubuntu-trusty",
+	  "network":"main-network",
+	  "tags":["web"]
+  }],
+   "provisioners": [{
+    "type": "shell",
+    "inline": [
+      "sleep 30",
+      "sudo apt-get update",
+      "sudo apt-get install -y docker"
+    ]
+  }]
+}
